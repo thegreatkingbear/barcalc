@@ -1,0 +1,494 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E78DBD7E1DE0CF77006AA55D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78DBD7D1DE0CF77006AA55D /* AppDelegate.swift */; };
+		E78DBD801DE0CF77006AA55D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E78DBD7F1DE0CF77006AA55D /* Assets.xcassets */; };
+		E78DBD831DE0CF77006AA55D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E78DBD811DE0CF77006AA55D /* MainMenu.xib */; };
+		E78DBD8E1DE0CF77006AA55D /* BarCalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78DBD8D1DE0CF77006AA55D /* BarCalcTests.swift */; };
+		E78DBD991DE0CF77006AA55D /* BarCalcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78DBD981DE0CF77006AA55D /* BarCalcUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E78DBD8A1DE0CF77006AA55D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E78DBD721DE0CF77006AA55D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E78DBD791DE0CF77006AA55D;
+			remoteInfo = BarCalc;
+		};
+		E78DBD951DE0CF77006AA55D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E78DBD721DE0CF77006AA55D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E78DBD791DE0CF77006AA55D;
+			remoteInfo = BarCalc;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E78DBD7A1DE0CF77006AA55D /* BarCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E78DBD7D1DE0CF77006AA55D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E78DBD7F1DE0CF77006AA55D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E78DBD821DE0CF77006AA55D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		E78DBD841DE0CF77006AA55D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E78DBD891DE0CF77006AA55D /* BarCalcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BarCalcTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E78DBD8D1DE0CF77006AA55D /* BarCalcTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarCalcTests.swift; sourceTree = "<group>"; };
+		E78DBD8F1DE0CF77006AA55D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E78DBD941DE0CF77006AA55D /* BarCalcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BarCalcUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E78DBD981DE0CF77006AA55D /* BarCalcUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarCalcUITests.swift; sourceTree = "<group>"; };
+		E78DBD9A1DE0CF77006AA55D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E78DBD771DE0CF77006AA55D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E78DBD861DE0CF77006AA55D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E78DBD911DE0CF77006AA55D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E78DBD711DE0CF77006AA55D = {
+			isa = PBXGroup;
+			children = (
+				E78DBD7C1DE0CF77006AA55D /* BarCalc */,
+				E78DBD8C1DE0CF77006AA55D /* BarCalcTests */,
+				E78DBD971DE0CF77006AA55D /* BarCalcUITests */,
+				E78DBD7B1DE0CF77006AA55D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E78DBD7B1DE0CF77006AA55D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E78DBD7A1DE0CF77006AA55D /* BarCalc.app */,
+				E78DBD891DE0CF77006AA55D /* BarCalcTests.xctest */,
+				E78DBD941DE0CF77006AA55D /* BarCalcUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E78DBD7C1DE0CF77006AA55D /* BarCalc */ = {
+			isa = PBXGroup;
+			children = (
+				E78DBD7D1DE0CF77006AA55D /* AppDelegate.swift */,
+				E78DBD7F1DE0CF77006AA55D /* Assets.xcassets */,
+				E78DBD811DE0CF77006AA55D /* MainMenu.xib */,
+				E78DBD841DE0CF77006AA55D /* Info.plist */,
+			);
+			path = BarCalc;
+			sourceTree = "<group>";
+		};
+		E78DBD8C1DE0CF77006AA55D /* BarCalcTests */ = {
+			isa = PBXGroup;
+			children = (
+				E78DBD8D1DE0CF77006AA55D /* BarCalcTests.swift */,
+				E78DBD8F1DE0CF77006AA55D /* Info.plist */,
+			);
+			path = BarCalcTests;
+			sourceTree = "<group>";
+		};
+		E78DBD971DE0CF77006AA55D /* BarCalcUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E78DBD981DE0CF77006AA55D /* BarCalcUITests.swift */,
+				E78DBD9A1DE0CF77006AA55D /* Info.plist */,
+			);
+			path = BarCalcUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E78DBD791DE0CF77006AA55D /* BarCalc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E78DBD9D1DE0CF77006AA55D /* Build configuration list for PBXNativeTarget "BarCalc" */;
+			buildPhases = (
+				E78DBD761DE0CF77006AA55D /* Sources */,
+				E78DBD771DE0CF77006AA55D /* Frameworks */,
+				E78DBD781DE0CF77006AA55D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BarCalc;
+			productName = BarCalc;
+			productReference = E78DBD7A1DE0CF77006AA55D /* BarCalc.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E78DBD881DE0CF77006AA55D /* BarCalcTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E78DBDA01DE0CF77006AA55D /* Build configuration list for PBXNativeTarget "BarCalcTests" */;
+			buildPhases = (
+				E78DBD851DE0CF77006AA55D /* Sources */,
+				E78DBD861DE0CF77006AA55D /* Frameworks */,
+				E78DBD871DE0CF77006AA55D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E78DBD8B1DE0CF77006AA55D /* PBXTargetDependency */,
+			);
+			name = BarCalcTests;
+			productName = BarCalcTests;
+			productReference = E78DBD891DE0CF77006AA55D /* BarCalcTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E78DBD931DE0CF77006AA55D /* BarCalcUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E78DBDA31DE0CF77006AA55D /* Build configuration list for PBXNativeTarget "BarCalcUITests" */;
+			buildPhases = (
+				E78DBD901DE0CF77006AA55D /* Sources */,
+				E78DBD911DE0CF77006AA55D /* Frameworks */,
+				E78DBD921DE0CF77006AA55D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E78DBD961DE0CF77006AA55D /* PBXTargetDependency */,
+			);
+			name = BarCalcUITests;
+			productName = BarCalcUITests;
+			productReference = E78DBD941DE0CF77006AA55D /* BarCalcUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E78DBD721DE0CF77006AA55D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Mookyung Kwak";
+				TargetAttributes = {
+					E78DBD791DE0CF77006AA55D = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					E78DBD881DE0CF77006AA55D = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = E78DBD791DE0CF77006AA55D;
+					};
+					E78DBD931DE0CF77006AA55D = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = E78DBD791DE0CF77006AA55D;
+					};
+				};
+			};
+			buildConfigurationList = E78DBD751DE0CF77006AA55D /* Build configuration list for PBXProject "BarCalc" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E78DBD711DE0CF77006AA55D;
+			productRefGroup = E78DBD7B1DE0CF77006AA55D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E78DBD791DE0CF77006AA55D /* BarCalc */,
+				E78DBD881DE0CF77006AA55D /* BarCalcTests */,
+				E78DBD931DE0CF77006AA55D /* BarCalcUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E78DBD781DE0CF77006AA55D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E78DBD801DE0CF77006AA55D /* Assets.xcassets in Resources */,
+				E78DBD831DE0CF77006AA55D /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E78DBD871DE0CF77006AA55D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E78DBD921DE0CF77006AA55D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E78DBD761DE0CF77006AA55D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E78DBD7E1DE0CF77006AA55D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E78DBD851DE0CF77006AA55D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E78DBD8E1DE0CF77006AA55D /* BarCalcTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E78DBD901DE0CF77006AA55D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E78DBD991DE0CF77006AA55D /* BarCalcUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E78DBD8B1DE0CF77006AA55D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E78DBD791DE0CF77006AA55D /* BarCalc */;
+			targetProxy = E78DBD8A1DE0CF77006AA55D /* PBXContainerItemProxy */;
+		};
+		E78DBD961DE0CF77006AA55D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E78DBD791DE0CF77006AA55D /* BarCalc */;
+			targetProxy = E78DBD951DE0CF77006AA55D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E78DBD811DE0CF77006AA55D /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E78DBD821DE0CF77006AA55D /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E78DBD9B1DE0CF77006AA55D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E78DBD9C1DE0CF77006AA55D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E78DBD9E1DE0CF77006AA55D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = BarCalc/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.passionproof.BarCalc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E78DBD9F1DE0CF77006AA55D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = BarCalc/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.passionproof.BarCalc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E78DBDA11DE0CF77006AA55D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = BarCalcTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.passionproof.BarCalcTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BarCalc.app/Contents/MacOS/BarCalc";
+			};
+			name = Debug;
+		};
+		E78DBDA21DE0CF77006AA55D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = BarCalcTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.passionproof.BarCalcTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BarCalc.app/Contents/MacOS/BarCalc";
+			};
+			name = Release;
+		};
+		E78DBDA41DE0CF77006AA55D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = BarCalcUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.passionproof.BarCalcUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BarCalc;
+			};
+			name = Debug;
+		};
+		E78DBDA51DE0CF77006AA55D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = BarCalcUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.passionproof.BarCalcUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BarCalc;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E78DBD751DE0CF77006AA55D /* Build configuration list for PBXProject "BarCalc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E78DBD9B1DE0CF77006AA55D /* Debug */,
+				E78DBD9C1DE0CF77006AA55D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E78DBD9D1DE0CF77006AA55D /* Build configuration list for PBXNativeTarget "BarCalc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E78DBD9E1DE0CF77006AA55D /* Debug */,
+				E78DBD9F1DE0CF77006AA55D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E78DBDA01DE0CF77006AA55D /* Build configuration list for PBXNativeTarget "BarCalcTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E78DBDA11DE0CF77006AA55D /* Debug */,
+				E78DBDA21DE0CF77006AA55D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E78DBDA31DE0CF77006AA55D /* Build configuration list for PBXNativeTarget "BarCalcUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E78DBDA41DE0CF77006AA55D /* Debug */,
+				E78DBDA51DE0CF77006AA55D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E78DBD721DE0CF77006AA55D /* Project object */;
+}
