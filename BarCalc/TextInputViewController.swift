@@ -45,10 +45,10 @@ class TextInputViewController: NSViewController, NSTextFieldDelegate {
     }
     
     func calculateExpression(values: String) {
-        SwiftTryCatch.tryBlock({ 
+        SwiftTryCatch.tryBlock({
             let expression = NSExpression(format: values)
             if let result = expression.expressionValueWithObject(nil, context: nil) as? NSNumber {
-                self.textField?.stringValue = "\(expression) = \(result.stringValue)"
+                self.textField?.stringValue = "\(expression) = \(result.doubleValue)"
                 self.existingExpression = "\(expression)"
             } else {
                 self.textField?.stringValue = "Invalid expression"
