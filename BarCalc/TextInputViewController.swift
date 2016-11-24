@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import MathParser
 
 class TextInputViewController: NSViewController, NSTextFieldDelegate {
 
@@ -28,15 +29,22 @@ class TextInputViewController: NSViewController, NSTextFieldDelegate {
         //print("control text did end editing")
         if let txtFld = obj.object as? NSTextField {
             let text = txtFld.stringValue
+            //print(text)
             self.calculateExpression(text)
         }
     }
     
     override func controlTextDidChange(obj: NSNotification) {
+        guard let _ = existingExpression else { return }
+        //print("control text did change : \(obj.object)")
+        if let _ = obj.object as? NSTextField {
+            //print(txtFld.stringValue)
+            self.existingExpression = nil
+        }
     }
     
     func control(control: NSControl, textView: NSTextView, doCommandBySelector commandSelector: Selector) -> Bool {
-        print("do command by selector : \(control)")
+        //print("do command by selector : \(control)")
         if let existing = existingExpression {
             self.textField?.stringValue = existing
             self.existingExpression = nil
@@ -45,20 +53,16 @@ class TextInputViewController: NSViewController, NSTextFieldDelegate {
     }
     
     func calculateExpression(values: String) {
-        SwiftTryCatch.tryBlock({
-            let expression = NSExpression(format: values)
-            if let result = expression.expressionValueWithObject(nil, context: nil) as? NSNumber {
-                self.textField?.stringValue = "\(expression) = \(result.doubleValue)"
-                self.existingExpression = "\(expression)"
-            } else {
-                self.textField?.stringValue = "Invalid expression"
-                self.existingExpression = nil
-            }
-        }, catchBlock: { (error) in
+        //print(values)
+        do {
+            let expression = try Expression(string: values)
+            let evaluator: Evaluator = Evaluator()
+            let result = try evaluator.evaluate(expression)
+            self.textField?.stringValue = "\(expression) = \(result)"
+            self.existingExpression = "\(expression)"
+        } catch {
             self.textField?.stringValue = "Invalid expression"
             self.existingExpression = nil
-        }) {
-            
         }
     }
 }
