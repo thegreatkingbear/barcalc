@@ -16,6 +16,7 @@
 		E78DBD991DE0CF77006AA55D /* BarCalcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78DBD981DE0CF77006AA55D /* BarCalcUITests.swift */; };
 		E78DBDA81DE0F5DE006AA55D /* TextInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78DBDA61DE0F5DE006AA55D /* TextInputViewController.swift */; };
 		E78DBDA91DE0F5DE006AA55D /* TextInputViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E78DBDA71DE0F5DE006AA55D /* TextInputViewController.xib */; };
+		E7E97E6C1DE782D00075F574 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = E7E97E6B1DE782D00075F574 /* README.md */; };
 		FC1073E6A0252A28B4F5A035 /* Pods_BarCalcUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE807C3B5CDAA664B41019BB /* Pods_BarCalcUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,7 @@
 		E78DBDA61DE0F5DE006AA55D /* TextInputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInputViewController.swift; sourceTree = "<group>"; };
 		E78DBDA71DE0F5DE006AA55D /* TextInputViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextInputViewController.xib; sourceTree = "<group>"; };
 		E78DBDB21DE15C4A006AA55D /* BridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
+		E7E97E6B1DE782D00075F574 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		EE6A5CC15BBE4C6005360FB8 /* Pods_BarCalc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BarCalc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F23B952894FA65EBB7EDFE5C /* Pods_BarCalcTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BarCalcTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F61FD38DDD5011E94CF7CD88 /* Pods-BarCalc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BarCalc.release.xcconfig"; path = "Pods/Target Support Files/Pods-BarCalc/Pods-BarCalc.release.xcconfig"; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 		E78DBD711DE0CF77006AA55D = {
 			isa = PBXGroup;
 			children = (
+				E7E97E6B1DE782D00075F574 /* README.md */,
 				E78DBD7C1DE0CF77006AA55D /* BarCalc */,
 				E78DBD8C1DE0CF77006AA55D /* BarCalcTests */,
 				E78DBD971DE0CF77006AA55D /* BarCalcUITests */,
@@ -447,6 +450,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7E97E6C1DE782D00075F574 /* README.md in Sources */,
 				E78DBDA81DE0F5DE006AA55D /* TextInputViewController.swift in Sources */,
 				E78DBD7E1DE0CF77006AA55D /* AppDelegate.swift in Sources */,
 			);
