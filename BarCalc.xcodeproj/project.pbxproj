@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		02C70BFB36E447B9E1FF8B62 /* Pods_BarCalcTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F23B952894FA65EBB7EDFE5C /* Pods_BarCalcTests.framework */; };
+		6D19F3E981DE5A87932B9AF9 /* Pods_BarCalc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE6A5CC15BBE4C6005360FB8 /* Pods_BarCalc.framework */; };
 		E72C2D611DE2A71C001E33CE /* MathParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E72C2D601DE2A71C001E33CE /* MathParser.framework */; };
 		E78DBD7E1DE0CF77006AA55D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78DBD7D1DE0CF77006AA55D /* AppDelegate.swift */; };
 		E78DBD801DE0CF77006AA55D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E78DBD7F1DE0CF77006AA55D /* Assets.xcassets */; };
@@ -58,7 +59,6 @@
 		E78DBD9A1DE0CF77006AA55D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E78DBDA61DE0F5DE006AA55D /* TextInputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInputViewController.swift; sourceTree = "<group>"; };
 		E78DBDA71DE0F5DE006AA55D /* TextInputViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextInputViewController.xib; sourceTree = "<group>"; };
-		E78DBDB21DE15C4A006AA55D /* BridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
 		E7E97E6B1DE782D00075F574 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		EE6A5CC15BBE4C6005360FB8 /* Pods_BarCalc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BarCalc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F23B952894FA65EBB7EDFE5C /* Pods_BarCalcTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BarCalcTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +71,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E72C2D611DE2A71C001E33CE /* MathParser.framework in Frameworks */,
+				6D19F3E981DE5A87932B9AF9 /* Pods_BarCalc.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,7 +137,6 @@
 				E78DBDA61DE0F5DE006AA55D /* TextInputViewController.swift */,
 				E78DBDA71DE0F5DE006AA55D /* TextInputViewController.xib */,
 				E78DBD841DE0CF77006AA55D /* Info.plist */,
-				E78DBDB21DE15C4A006AA55D /* BridgingHeader.h */,
 			);
 			path = BarCalc;
 			sourceTree = "<group>";
@@ -249,13 +249,16 @@
 				TargetAttributes = {
 					E78DBD791DE0CF77006AA55D = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0820;
 					};
 					E78DBD881DE0CF77006AA55D = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0820;
 						TestTargetID = E78DBD791DE0CF77006AA55D;
 					};
 					E78DBD931DE0CF77006AA55D = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0820;
 						TestTargetID = E78DBD791DE0CF77006AA55D;
 					};
 				};
@@ -594,8 +597,8 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.passionproof.BarCalc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = BarCalc/BridgingHeader.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -612,7 +615,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.passionproof.BarCalc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = BarCalc/BridgingHeader.h;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -627,6 +630,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.passionproof.BarCalcTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BarCalc.app/Contents/MacOS/BarCalc";
 			};
 			name = Debug;
@@ -642,6 +646,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.passionproof.BarCalcTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BarCalc.app/Contents/MacOS/BarCalc";
 			};
 			name = Release;
@@ -656,6 +661,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.passionproof.BarCalcUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = BarCalc;
 			};
 			name = Debug;
@@ -670,6 +676,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.passionproof.BarCalcUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = BarCalc;
 			};
 			name = Release;

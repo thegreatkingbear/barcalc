@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>DDMathParser.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-BarCalc.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-BarCalcTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-BarCalcUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>24B1E23A25077CD7AC1B4BB5443370B0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>370F7111745C03FD13EB3350C9C23D15</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>91ED79E07DD4C0D762222BA5FC99C65B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B027C7F17A48E878172D5B42600DA24F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

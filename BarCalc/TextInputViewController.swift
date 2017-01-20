@@ -21,11 +21,11 @@ class TextInputViewController: NSViewController, NSTextFieldDelegate {
         textField?.delegate = self
     }
     
-    override func controlTextDidBeginEditing(obj: NSNotification) {
+    override func controlTextDidBeginEditing(_ obj: Notification) {
         //print("control text did begin editing")
     }
     
-    override func controlTextDidEndEditing(obj: NSNotification) {
+    override func controlTextDidEndEditing(_ obj: Notification) {
         //print("control text did end editing")
         if let txtFld = obj.object as? NSTextField {
             let text = txtFld.stringValue
@@ -34,7 +34,7 @@ class TextInputViewController: NSViewController, NSTextFieldDelegate {
         }
     }
     
-    override func controlTextDidChange(obj: NSNotification) {
+    override func controlTextDidChange(_ obj: Notification) {
         guard let _ = existingExpression else { return }
         //print("control text did change : \(obj.object)")
         if let _ = obj.object as? NSTextField {
@@ -43,7 +43,7 @@ class TextInputViewController: NSViewController, NSTextFieldDelegate {
         }
     }
     
-    func control(control: NSControl, textView: NSTextView, doCommandBySelector commandSelector: Selector) -> Bool {
+    func control(_ control: NSControl, textView: NSTextView, doCommandBy commandSelector: Selector) -> Bool {
         //print("do command by selector : \(control)")
         if let existing = existingExpression {
             self.textField?.stringValue = existing
@@ -52,7 +52,7 @@ class TextInputViewController: NSViewController, NSTextFieldDelegate {
         return false
     }
     
-    func calculateExpression(values: String) {
+    func calculateExpression(_ values: String) {
         //print(values)
         do {
             let expression = try Expression(string: values)

@@ -1,0 +1,6 @@
+framework module Pods_BarCalcTests {
+  umbrella header "Pods-BarCalcTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

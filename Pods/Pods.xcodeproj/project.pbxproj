@@ -1,0 +1,1022 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03B6BD78A28212F807053F8F885FAAF3 /* TokenGrouper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A1947759619AC0D0517DDEB5556344 /* TokenGrouper.swift */; };
+		04E95C1EB4054062A651EEA4715F18B6 /* Pods-BarCalcUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 83DDC6A9B95247E4D207286588C8AD70 /* Pods-BarCalcUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09795DD920ED3BAF336CA70B94270B1B /* Pods-BarCalcTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AF90EAA6614A65CED17297567308EACD /* Pods-BarCalcTests-dummy.m */; };
+		0AACB5AC453FCDC72B0C93B1F0ADF204 /* TokenCharacterBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2C73A640E67E12AC5B5F91ED4DBB7D /* TokenCharacterBuffer.swift */; };
+		0E3FCA1F245386794218B70CC7F75A48 /* DDMathParser-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A91BCE663C2F4F6EE70968D7417994D6 /* DDMathParser-dummy.m */; };
+		10D7CC510C4C35747EDD32E2499015B0 /* NumberExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7811E0487C439C980C1CBFAE477DD109 /* NumberExtractor.swift */; };
+		1497463B0DA21154444B614D8F369973 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */; };
+		1959AEDED2A45CB6636E9C10443B63E8 /* Pods-BarCalcUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 252FEC161527803246282257B6D8DD78 /* Pods-BarCalcUITests-dummy.m */; };
+		2389A4EBB7E5F3D7148B28158D2E3F99 /* RawToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB69F8F72C48CE84D7FFAEEC4EB8E71 /* RawToken.swift */; };
+		27DE86C053B3660CF99EC4D9C88A5667 /* OperatorTokenSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B551AC810BA07192A5217FF7548B8A /* OperatorTokenSet.swift */; };
+		2A712044B54383D1D13DF94FC58487CC /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F69512468A5DE4576DD4C92C11DFD8 /* Double.swift */; };
+		2C77EE58F7940D39E24620FCC5EF579C /* Evaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1266C1E6347135568602359D9C8A63F9 /* Evaluator.swift */; };
+		2E09DC4A438A7130F3D2B4085A29E96F /* DynamicResolution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB91DB9C5AF2D60361FCAF64FDF42A7 /* DynamicResolution.swift */; };
+		3208A5A9D7113755E3EEC40298BC7281 /* Either.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC694022CCB84F454DFCA45C7842D1E /* Either.swift */; };
+		341154798C4280C8396114C74EB88740 /* Function.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D4FDC352A50A2EEA5C414BA26A19E6 /* Function.swift */; };
+		35F5082692B95CB3033DCEB8D57CB9F6 /* Pods-BarCalc-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB1343A025C69E189BA90E61B4CFE4D /* Pods-BarCalc-dummy.m */; };
+		392C1F7D33503448142E25BB050EFA90 /* ExponentExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7353E4393475631E65B69A6E27A3DE5 /* ExponentExtractor.swift */; };
+		39B69EB019C5E25E3F14FE2ACB8644FF /* TokenExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EF49854E5A33A55771583010A68BC9 /* TokenExtractor.swift */; };
+		3B5A9314F51A2CBA074426119E816DAD /* Pods-BarCalcTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F03444567524E36F02BC48145AD8FD2B /* Pods-BarCalcTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3FF5CCB4A95D788C43F0CA02FAA4F435 /* IdentifierExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A61077A273A047B9FFDFABCE0F216E /* IdentifierExtractor.swift */; };
+		4F52AEA7F070998835F6559AC8CC9656 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */; };
+		4FCDEBC0AC43C3BAFFD0C962490D85A8 /* VariableExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CF29F4956CC72775835F4B75D0464B /* VariableExtractor.swift */; };
+		71B968A3AD91DC247495E76C4B0C7A4C /* Pods-BarCalc-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C58F63A22E33BEC0FBCD40DDA84DEFE1 /* Pods-BarCalc-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		781EF9E7C42BEBD676364FA7429EE298 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */; };
+		790785A26B888307314140F0E89B0B03 /* SpecialNumberExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA61F62BA175B3BCDA66BCF4AC0A988 /* SpecialNumberExtractor.swift */; };
+		7BBE5ED3072C2125DF1DCF0DD4206DB9 /* OperatorSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2FF56489D2F29E99F1F118E667628A /* OperatorSet.swift */; };
+		7F3873CB789022A12DFF64791E55EE3B /* QuotedVariableExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D706698EFF167BB77C496D6E5D8AEC2D /* QuotedVariableExtractor.swift */; };
+		897D42542DF8C8A4FBDAD18299662179 /* LocalizedNumberExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C252EB1BE0D91D8F32DF93A5952E537B /* LocalizedNumberExtractor.swift */; };
+		9D14C1DC1E2CB709ACC8D495D27599A1 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EC24B544D02B2571119BA3F66DCEED /* String.swift */; };
+		A1F9295A2C45A9E68F3AE22E04461C15 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */; };
+		A77BD0C187DF94798A7F24F67E10DF12 /* Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27109260672415BBB07D60390D19F2C1 /* Operator.swift */; };
+		ABA6823987AB7344381939ACEF020DD8 /* PeekingIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5058895641B7F5C48DA55DA3AAEEAACE /* PeekingIterator.swift */; };
+		AE2431D3822F829BB83F698DEFD555A7 /* MathParserErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DC33B33A7FFD6662EFB720D425C3AA /* MathParserErrors.swift */; };
+		B4979C28CA99CAA9CA5E5F9B10C759D9 /* GroupedToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FB2B7EA95BFDE8A9FFB0307C4E4488 /* GroupedToken.swift */; };
+		B4E73EFF26D048F07F697939AF7CB8B0 /* FunctionSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A16E9A696813D52D99D6E3DF827C649 /* FunctionSet.swift */; };
+		B85FB8A948B9CE562B07C79B44892E9B /* Expressionizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7401D79DD00B13BDD684C4D025ACA0B /* Expressionizer.swift */; };
+		B9A6A20F1AD8DDEAB1F8CE62BB417AE9 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0420CABA3FB9F298A79E3222597B0618 /* Character.swift */; };
+		BE63D6999778A55473CD7B36F3C265A2 /* Operator+Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19FD52AA4A43E7FF61F87111C4E0D00 /* Operator+Defaults.swift */; };
+		C6CA2602017F34761CF81B504ADBAD3F /* HexNumberExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD0DE6D7864DCA5291FDCEA1195819A /* HexNumberExtractor.swift */; };
+		CDBDDA6672BE5BA85A923FB7872C361E /* ExpressionRewriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4E394B694E7CE8C4E6865C4F0ED9E8 /* ExpressionRewriter.swift */; };
+		CE714F4BC4CDC0A668B7BCF17D0B924C /* RewriteRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B9DE95C73636E28CBA02D58D4848F8 /* RewriteRule.swift */; };
+		CEAA2CF3BEEE15E4E72C175AF864D5BF /* ResolvedToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AD730F2258926376F9C399C2613B0B /* ResolvedToken.swift */; };
+		D0A4A44BF06B5240D2BCEEAE1222B310 /* MathParser.h in Headers */ = {isa = PBXBuildFile; fileRef = BEC636AF65B33FC4168F5149625398E6 /* MathParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D85EFDB016B0BDF1EFCB2D0BAA58CDEC /* Tokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C594B8480697672F9832BC01E6C37A5 /* Tokenizer.swift */; };
+		D9064852DEF10123A0E6F439DF5930F0 /* OperatorExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2AFDD7ECEBFA778FD362C18DC5795 /* OperatorExtractor.swift */; };
+		E1BB29589F23B773B266C74EB284581D /* TokenIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DCB193738A979F6D7A26605F7DCEB9 /* TokenIterator.swift */; };
+		E568ACF66BBB25A74645C22ACF819CF4 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD0E3BA3B75D941B802E556E460EBCA /* Expression.swift */; };
+		EB88F0E69C004445BDA0BD7EDC99426B /* TokenResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD71B1531F93A7E0917A317B9DD1CEC /* TokenResolver.swift */; };
+		F10AB9E1BD4DDD9EB73F150E915542DD /* DDMathParser-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9878A09460603F057FF3FD01D1C24C5B /* DDMathParser-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F42D115B9CEE11A45302BDA0BE5CBB79 /* OctalNumberExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689CFB87A286383E95764113071F6BF2 /* OctalNumberExtractor.swift */; };
+		F5E67236F68F1CB502FE9159B759775E /* RewriteRule+Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90320A3FC2C43ADB724D9E24215C8C80 /* RewriteRule+Defaults.swift */; };
+		F922B453604823C56143CBDD2F2ADFFD /* Functions+Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B00C3E773846C91066DC2284AD927F7 /* Functions+Defaults.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EFD7BD0B12D5FC03AD281B577CDBB6C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B027C7F17A48E878172D5B42600DA24F;
+			remoteInfo = DDMathParser;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00EF49854E5A33A55771583010A68BC9 /* TokenExtractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TokenExtractor.swift; path = MathParser/TokenExtractor.swift; sourceTree = "<group>"; };
+		01FFEB2BAD01A1B5BF00BDB32FA61824 /* Pods-BarCalcUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BarCalcUITests.release.xcconfig"; sourceTree = "<group>"; };
+		03A9846EAC4D449E07C2B893327BDD4E /* Pods-BarCalcTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BarCalcTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0420CABA3FB9F298A79E3222597B0618 /* Character.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Character.swift; path = MathParser/Character.swift; sourceTree = "<group>"; };
+		0852DE34A14352318AB758310F17B132 /* Pods-BarCalcUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BarCalcUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1266C1E6347135568602359D9C8A63F9 /* Evaluator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Evaluator.swift; path = MathParser/Evaluator.swift; sourceTree = "<group>"; };
+		16D4FDC352A50A2EEA5C414BA26A19E6 /* Function.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Function.swift; path = MathParser/Function.swift; sourceTree = "<group>"; };
+		1856DE2D2DA2E5FE897CAF5F682FC43F /* Pods-BarCalcTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BarCalcTests-resources.sh"; sourceTree = "<group>"; };
+		19DC33B33A7FFD6662EFB720D425C3AA /* MathParserErrors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MathParserErrors.swift; path = MathParser/MathParserErrors.swift; sourceTree = "<group>"; };
+		1DB69F8F72C48CE84D7FFAEEC4EB8E71 /* RawToken.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RawToken.swift; path = MathParser/RawToken.swift; sourceTree = "<group>"; };
+		1FB1343A025C69E189BA90E61B4CFE4D /* Pods-BarCalc-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BarCalc-dummy.m"; sourceTree = "<group>"; };
+		252FEC161527803246282257B6D8DD78 /* Pods-BarCalcUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BarCalcUITests-dummy.m"; sourceTree = "<group>"; };
+		270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		27109260672415BBB07D60390D19F2C1 /* Operator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operator.swift; path = MathParser/Operator.swift; sourceTree = "<group>"; };
+		2C594B8480697672F9832BC01E6C37A5 /* Tokenizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Tokenizer.swift; path = MathParser/Tokenizer.swift; sourceTree = "<group>"; };
+		2FA61F62BA175B3BCDA66BCF4AC0A988 /* SpecialNumberExtractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpecialNumberExtractor.swift; path = MathParser/SpecialNumberExtractor.swift; sourceTree = "<group>"; };
+		441EFFC4D1BEB586ECB6CE76A338AEBA /* Pods_BarCalcUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BarCalcUITests.framework; path = "Pods-BarCalcUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		45E8D77B64394D3772A99829E72036E9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46A61077A273A047B9FFDFABCE0F216E /* IdentifierExtractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IdentifierExtractor.swift; path = MathParser/IdentifierExtractor.swift; sourceTree = "<group>"; };
+		4B4E394B694E7CE8C4E6865C4F0ED9E8 /* ExpressionRewriter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpressionRewriter.swift; path = MathParser/ExpressionRewriter.swift; sourceTree = "<group>"; };
+		5058895641B7F5C48DA55DA3AAEEAACE /* PeekingIterator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PeekingIterator.swift; path = MathParser/PeekingIterator.swift; sourceTree = "<group>"; };
+		53A1947759619AC0D0517DDEB5556344 /* TokenGrouper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TokenGrouper.swift; path = MathParser/TokenGrouper.swift; sourceTree = "<group>"; };
+		5859C0CD830269C4B4772F1489A96838 /* Pods-BarCalcUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BarCalcUITests-resources.sh"; sourceTree = "<group>"; };
+		592B3F89B7B1CB08AAAAF666A4693D9A /* Pods-BarCalc-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BarCalc-frameworks.sh"; sourceTree = "<group>"; };
+		593BF28FC053F35B5DE9B5A22EC3EC08 /* Pods_BarCalcTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BarCalcTests.framework; path = "Pods-BarCalcTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AD0E3BA3B75D941B802E556E460EBCA /* Expression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expression.swift; path = MathParser/Expression.swift; sourceTree = "<group>"; };
+		5AD729488194A955EBE9D02C2AA87B36 /* DDMathParser-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DDMathParser-prefix.pch"; sourceTree = "<group>"; };
+		5B00C3E773846C91066DC2284AD927F7 /* Functions+Defaults.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Functions+Defaults.swift"; path = "MathParser/Functions+Defaults.swift"; sourceTree = "<group>"; };
+		6326264A72F4B188582C52BF7AFF2AEB /* Pods-BarCalcTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BarCalcTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		64DF1B0D0D929C750D436F6284E076C5 /* Pods-BarCalcTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BarCalcTests-frameworks.sh"; sourceTree = "<group>"; };
+		689CFB87A286383E95764113071F6BF2 /* OctalNumberExtractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OctalNumberExtractor.swift; path = MathParser/OctalNumberExtractor.swift; sourceTree = "<group>"; };
+		6A16E9A696813D52D99D6E3DF827C649 /* FunctionSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FunctionSet.swift; path = MathParser/FunctionSet.swift; sourceTree = "<group>"; };
+		6A9AB20FE351AC75F855D48022F47C97 /* Pods-BarCalc-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BarCalc-acknowledgements.plist"; sourceTree = "<group>"; };
+		6E2DC3354FCCD2CDB99D374B99275072 /* Pods-BarCalcTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BarCalcTests.debug.xcconfig"; sourceTree = "<group>"; };
+		76C7AE979D5F0590A2313BA85EAF2293 /* Pods-BarCalc.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-BarCalc.modulemap"; sourceTree = "<group>"; };
+		7811E0487C439C980C1CBFAE477DD109 /* NumberExtractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NumberExtractor.swift; path = MathParser/NumberExtractor.swift; sourceTree = "<group>"; };
+		7A49226F9B210EC1282EFD38F28142AA /* DDMathParser.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = DDMathParser.modulemap; sourceTree = "<group>"; };
+		817702472895D3A1A07DBC2F2217E955 /* Pods-BarCalcTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-BarCalcTests.modulemap"; sourceTree = "<group>"; };
+		81F513C1E51D1D8279AFF639864BADF3 /* Pods-BarCalcUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BarCalcUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		83DDC6A9B95247E4D207286588C8AD70 /* Pods-BarCalcUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BarCalcUITests-umbrella.h"; sourceTree = "<group>"; };
+		84FF9A78B763DAE3465B77DDCB38C0FC /* Pods-BarCalc-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BarCalc-resources.sh"; sourceTree = "<group>"; };
+		8B3C418B46E0F3DCD3141803B2E38CBC /* MathParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MathParser.framework; path = DDMathParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D25F3CBB4C9D34EC643E693E7CCBE36 /* Pods_BarCalc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BarCalc.framework; path = "Pods-BarCalc.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DD0DE6D7864DCA5291FDCEA1195819A /* HexNumberExtractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HexNumberExtractor.swift; path = MathParser/HexNumberExtractor.swift; sourceTree = "<group>"; };
+		8E2FF56489D2F29E99F1F118E667628A /* OperatorSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OperatorSet.swift; path = MathParser/OperatorSet.swift; sourceTree = "<group>"; };
+		90320A3FC2C43ADB724D9E24215C8C80 /* RewriteRule+Defaults.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "RewriteRule+Defaults.swift"; path = "MathParser/RewriteRule+Defaults.swift"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9878A09460603F057FF3FD01D1C24C5B /* DDMathParser-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DDMathParser-umbrella.h"; sourceTree = "<group>"; };
+		98B9DE95C73636E28CBA02D58D4848F8 /* RewriteRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RewriteRule.swift; path = MathParser/RewriteRule.swift; sourceTree = "<group>"; };
+		9EB91DB9C5AF2D60361FCAF64FDF42A7 /* DynamicResolution.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DynamicResolution.swift; path = MathParser/DynamicResolution.swift; sourceTree = "<group>"; };
+		9F7BC8A63D382DB4703FBF76CC90F7EF /* Pods-BarCalcUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BarCalcUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A00B389F5330F572212EBFDA485C02B7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8164785518C5DD0D35DD0D500E75319 /* Pods-BarCalcUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-BarCalcUITests.modulemap"; sourceTree = "<group>"; };
+		A91BCE663C2F4F6EE70968D7417994D6 /* DDMathParser-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DDMathParser-dummy.m"; sourceTree = "<group>"; };
+		AF90EAA6614A65CED17297567308EACD /* Pods-BarCalcTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BarCalcTests-dummy.m"; sourceTree = "<group>"; };
+		B7353E4393475631E65B69A6E27A3DE5 /* ExponentExtractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExponentExtractor.swift; path = MathParser/ExponentExtractor.swift; sourceTree = "<group>"; };
+		B7F69512468A5DE4576DD4C92C11DFD8 /* Double.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Double.swift; path = MathParser/Double.swift; sourceTree = "<group>"; };
+		BDC694022CCB84F454DFCA45C7842D1E /* Either.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Either.swift; path = MathParser/Either.swift; sourceTree = "<group>"; };
+		BEC636AF65B33FC4168F5149625398E6 /* MathParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MathParser.h; path = MathParser/MathParser.h; sourceTree = "<group>"; };
+		C1EC24B544D02B2571119BA3F66DCEED /* String.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = String.swift; path = MathParser/String.swift; sourceTree = "<group>"; };
+		C252EB1BE0D91D8F32DF93A5952E537B /* LocalizedNumberExtractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocalizedNumberExtractor.swift; path = MathParser/LocalizedNumberExtractor.swift; sourceTree = "<group>"; };
+		C2DCB193738A979F6D7A26605F7DCEB9 /* TokenIterator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TokenIterator.swift; path = MathParser/TokenIterator.swift; sourceTree = "<group>"; };
+		C58F63A22E33BEC0FBCD40DDA84DEFE1 /* Pods-BarCalc-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BarCalc-umbrella.h"; sourceTree = "<group>"; };
+		C7401D79DD00B13BDD684C4D025ACA0B /* Expressionizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expressionizer.swift; path = MathParser/Expressionizer.swift; sourceTree = "<group>"; };
+		C7B551AC810BA07192A5217FF7548B8A /* OperatorTokenSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OperatorTokenSet.swift; path = MathParser/OperatorTokenSet.swift; sourceTree = "<group>"; };
+		CE2C73A640E67E12AC5B5F91ED4DBB7D /* TokenCharacterBuffer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TokenCharacterBuffer.swift; path = MathParser/TokenCharacterBuffer.swift; sourceTree = "<group>"; };
+		CEC2AFDD7ECEBFA778FD362C18DC5795 /* OperatorExtractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OperatorExtractor.swift; path = MathParser/OperatorExtractor.swift; sourceTree = "<group>"; };
+		D14CB55AE653DC3CFA39AB14F5963612 /* Pods-BarCalc-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BarCalc-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D1AD730F2258926376F9C399C2613B0B /* ResolvedToken.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResolvedToken.swift; path = MathParser/ResolvedToken.swift; sourceTree = "<group>"; };
+		D706698EFF167BB77C496D6E5D8AEC2D /* QuotedVariableExtractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuotedVariableExtractor.swift; path = MathParser/QuotedVariableExtractor.swift; sourceTree = "<group>"; };
+		DAD71B1531F93A7E0917A317B9DD1CEC /* TokenResolver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TokenResolver.swift; path = MathParser/TokenResolver.swift; sourceTree = "<group>"; };
+		E523D4F49A99C698B3BA0A54212D6D1F /* Pods-BarCalcTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BarCalcTests.release.xcconfig"; sourceTree = "<group>"; };
+		E5CF29F4956CC72775835F4B75D0464B /* VariableExtractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VariableExtractor.swift; path = MathParser/VariableExtractor.swift; sourceTree = "<group>"; };
+		E6FB2B7EA95BFDE8A9FFB0307C4E4488 /* GroupedToken.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GroupedToken.swift; path = MathParser/GroupedToken.swift; sourceTree = "<group>"; };
+		EAB1B0D687F82908F0C9A1DC1DA19EE9 /* Pods-BarCalc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BarCalc.release.xcconfig"; sourceTree = "<group>"; };
+		EB263FE40916E1E2F3BFE02D2CA31458 /* Pods-BarCalc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BarCalc.debug.xcconfig"; sourceTree = "<group>"; };
+		F03444567524E36F02BC48145AD8FD2B /* Pods-BarCalcTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BarCalcTests-umbrella.h"; sourceTree = "<group>"; };
+		F19FD52AA4A43E7FF61F87111C4E0D00 /* Operator+Defaults.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Operator+Defaults.swift"; path = "MathParser/Operator+Defaults.swift"; sourceTree = "<group>"; };
+		F2CB9478A1FEF19B3A9575AD352E970B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3D896F78A55A4BB35C44FFB487DB584 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8AF5E53C12238A7FE57A16DBF9B2301 /* DDMathParser.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DDMathParser.xcconfig; sourceTree = "<group>"; };
+		FBCFB79D8BAD207CA9D6C9C713B18F14 /* Pods-BarCalcUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BarCalcUITests-frameworks.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		184E4B9FA9886B1DB09980757E090990 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1F9295A2C45A9E68F3AE22E04461C15 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		217998D43E6326234D66258DA64D5598 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1497463B0DA21154444B614D8F369973 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F541B6A9250AF22C5CBB5F3CA76927C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F52AEA7F070998835F6559AC8CC9656 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5B4A11EADABAC9F9260982ACDDF0860 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				781EF9E7C42BEBD676364FA7429EE298 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04C068A18C5413F804A2959126093416 /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		161254F5ACD45FD4D39F093041C812C6 /* Pods-BarCalcUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A00B389F5330F572212EBFDA485C02B7 /* Info.plist */,
+				A8164785518C5DD0D35DD0D500E75319 /* Pods-BarCalcUITests.modulemap */,
+				0852DE34A14352318AB758310F17B132 /* Pods-BarCalcUITests-acknowledgements.markdown */,
+				81F513C1E51D1D8279AFF639864BADF3 /* Pods-BarCalcUITests-acknowledgements.plist */,
+				252FEC161527803246282257B6D8DD78 /* Pods-BarCalcUITests-dummy.m */,
+				FBCFB79D8BAD207CA9D6C9C713B18F14 /* Pods-BarCalcUITests-frameworks.sh */,
+				5859C0CD830269C4B4772F1489A96838 /* Pods-BarCalcUITests-resources.sh */,
+				83DDC6A9B95247E4D207286588C8AD70 /* Pods-BarCalcUITests-umbrella.h */,
+				9F7BC8A63D382DB4703FBF76CC90F7EF /* Pods-BarCalcUITests.debug.xcconfig */,
+				01FFEB2BAD01A1B5BF00BDB32FA61824 /* Pods-BarCalcUITests.release.xcconfig */,
+			);
+			name = "Pods-BarCalcUITests";
+			path = "Target Support Files/Pods-BarCalcUITests";
+			sourceTree = "<group>";
+		};
+		178BB185DBD3191C06B2F139097AE4A2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7A49226F9B210EC1282EFD38F28142AA /* DDMathParser.modulemap */,
+				F8AF5E53C12238A7FE57A16DBF9B2301 /* DDMathParser.xcconfig */,
+				A91BCE663C2F4F6EE70968D7417994D6 /* DDMathParser-dummy.m */,
+				5AD729488194A955EBE9D02C2AA87B36 /* DDMathParser-prefix.pch */,
+				9878A09460603F057FF3FD01D1C24C5B /* DDMathParser-umbrella.h */,
+				F2CB9478A1FEF19B3A9575AD352E970B /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DDMathParser";
+			sourceTree = "<group>";
+		};
+		1C7B4EC42A864EE76511F2D4AAC7FB16 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B3C418B46E0F3DCD3141803B2E38CBC /* MathParser.framework */,
+				8D25F3CBB4C9D34EC643E693E7CCBE36 /* Pods_BarCalc.framework */,
+				593BF28FC053F35B5DE9B5A22EC3EC08 /* Pods_BarCalcTests.framework */,
+				441EFFC4D1BEB586ECB6CE76A338AEBA /* Pods_BarCalcUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04C068A18C5413F804A2959126093416 /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		52AC8599E6F7D6932B69565EA6697773 /* Pods-BarCalc */ = {
+			isa = PBXGroup;
+			children = (
+				F3D896F78A55A4BB35C44FFB487DB584 /* Info.plist */,
+				76C7AE979D5F0590A2313BA85EAF2293 /* Pods-BarCalc.modulemap */,
+				D14CB55AE653DC3CFA39AB14F5963612 /* Pods-BarCalc-acknowledgements.markdown */,
+				6A9AB20FE351AC75F855D48022F47C97 /* Pods-BarCalc-acknowledgements.plist */,
+				1FB1343A025C69E189BA90E61B4CFE4D /* Pods-BarCalc-dummy.m */,
+				592B3F89B7B1CB08AAAAF666A4693D9A /* Pods-BarCalc-frameworks.sh */,
+				84FF9A78B763DAE3465B77DDCB38C0FC /* Pods-BarCalc-resources.sh */,
+				C58F63A22E33BEC0FBCD40DDA84DEFE1 /* Pods-BarCalc-umbrella.h */,
+				EB263FE40916E1E2F3BFE02D2CA31458 /* Pods-BarCalc.debug.xcconfig */,
+				EAB1B0D687F82908F0C9A1DC1DA19EE9 /* Pods-BarCalc.release.xcconfig */,
+			);
+			name = "Pods-BarCalc";
+			path = "Target Support Files/Pods-BarCalc";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */,
+				A71C775D9422E11950AA51BC2A34498F /* Pods */,
+				1C7B4EC42A864EE76511F2D4AAC7FB16 /* Products */,
+				BC579625A8A060B7B75250E896002FF7 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		A71C775D9422E11950AA51BC2A34498F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E24742E60BE49922973CCB9952C425FC /* DDMathParser */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AD42A049CC23C0530B53B82B5B23287A /* Pods-BarCalcTests */ = {
+			isa = PBXGroup;
+			children = (
+				45E8D77B64394D3772A99829E72036E9 /* Info.plist */,
+				817702472895D3A1A07DBC2F2217E955 /* Pods-BarCalcTests.modulemap */,
+				03A9846EAC4D449E07C2B893327BDD4E /* Pods-BarCalcTests-acknowledgements.markdown */,
+				6326264A72F4B188582C52BF7AFF2AEB /* Pods-BarCalcTests-acknowledgements.plist */,
+				AF90EAA6614A65CED17297567308EACD /* Pods-BarCalcTests-dummy.m */,
+				64DF1B0D0D929C750D436F6284E076C5 /* Pods-BarCalcTests-frameworks.sh */,
+				1856DE2D2DA2E5FE897CAF5F682FC43F /* Pods-BarCalcTests-resources.sh */,
+				F03444567524E36F02BC48145AD8FD2B /* Pods-BarCalcTests-umbrella.h */,
+				6E2DC3354FCCD2CDB99D374B99275072 /* Pods-BarCalcTests.debug.xcconfig */,
+				E523D4F49A99C698B3BA0A54212D6D1F /* Pods-BarCalcTests.release.xcconfig */,
+			);
+			name = "Pods-BarCalcTests";
+			path = "Target Support Files/Pods-BarCalcTests";
+			sourceTree = "<group>";
+		};
+		BC579625A8A060B7B75250E896002FF7 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				52AC8599E6F7D6932B69565EA6697773 /* Pods-BarCalc */,
+				AD42A049CC23C0530B53B82B5B23287A /* Pods-BarCalcTests */,
+				161254F5ACD45FD4D39F093041C812C6 /* Pods-BarCalcUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		E24742E60BE49922973CCB9952C425FC /* DDMathParser */ = {
+			isa = PBXGroup;
+			children = (
+				0420CABA3FB9F298A79E3222597B0618 /* Character.swift */,
+				B7F69512468A5DE4576DD4C92C11DFD8 /* Double.swift */,
+				9EB91DB9C5AF2D60361FCAF64FDF42A7 /* DynamicResolution.swift */,
+				BDC694022CCB84F454DFCA45C7842D1E /* Either.swift */,
+				1266C1E6347135568602359D9C8A63F9 /* Evaluator.swift */,
+				B7353E4393475631E65B69A6E27A3DE5 /* ExponentExtractor.swift */,
+				5AD0E3BA3B75D941B802E556E460EBCA /* Expression.swift */,
+				C7401D79DD00B13BDD684C4D025ACA0B /* Expressionizer.swift */,
+				4B4E394B694E7CE8C4E6865C4F0ED9E8 /* ExpressionRewriter.swift */,
+				16D4FDC352A50A2EEA5C414BA26A19E6 /* Function.swift */,
+				5B00C3E773846C91066DC2284AD927F7 /* Functions+Defaults.swift */,
+				6A16E9A696813D52D99D6E3DF827C649 /* FunctionSet.swift */,
+				E6FB2B7EA95BFDE8A9FFB0307C4E4488 /* GroupedToken.swift */,
+				8DD0DE6D7864DCA5291FDCEA1195819A /* HexNumberExtractor.swift */,
+				46A61077A273A047B9FFDFABCE0F216E /* IdentifierExtractor.swift */,
+				C252EB1BE0D91D8F32DF93A5952E537B /* LocalizedNumberExtractor.swift */,
+				BEC636AF65B33FC4168F5149625398E6 /* MathParser.h */,
+				19DC33B33A7FFD6662EFB720D425C3AA /* MathParserErrors.swift */,
+				7811E0487C439C980C1CBFAE477DD109 /* NumberExtractor.swift */,
+				689CFB87A286383E95764113071F6BF2 /* OctalNumberExtractor.swift */,
+				27109260672415BBB07D60390D19F2C1 /* Operator.swift */,
+				F19FD52AA4A43E7FF61F87111C4E0D00 /* Operator+Defaults.swift */,
+				CEC2AFDD7ECEBFA778FD362C18DC5795 /* OperatorExtractor.swift */,
+				8E2FF56489D2F29E99F1F118E667628A /* OperatorSet.swift */,
+				C7B551AC810BA07192A5217FF7548B8A /* OperatorTokenSet.swift */,
+				5058895641B7F5C48DA55DA3AAEEAACE /* PeekingIterator.swift */,
+				D706698EFF167BB77C496D6E5D8AEC2D /* QuotedVariableExtractor.swift */,
+				1DB69F8F72C48CE84D7FFAEEC4EB8E71 /* RawToken.swift */,
+				D1AD730F2258926376F9C399C2613B0B /* ResolvedToken.swift */,
+				98B9DE95C73636E28CBA02D58D4848F8 /* RewriteRule.swift */,
+				90320A3FC2C43ADB724D9E24215C8C80 /* RewriteRule+Defaults.swift */,
+				2FA61F62BA175B3BCDA66BCF4AC0A988 /* SpecialNumberExtractor.swift */,
+				C1EC24B544D02B2571119BA3F66DCEED /* String.swift */,
+				CE2C73A640E67E12AC5B5F91ED4DBB7D /* TokenCharacterBuffer.swift */,
+				00EF49854E5A33A55771583010A68BC9 /* TokenExtractor.swift */,
+				53A1947759619AC0D0517DDEB5556344 /* TokenGrouper.swift */,
+				C2DCB193738A979F6D7A26605F7DCEB9 /* TokenIterator.swift */,
+				2C594B8480697672F9832BC01E6C37A5 /* Tokenizer.swift */,
+				DAD71B1531F93A7E0917A317B9DD1CEC /* TokenResolver.swift */,
+				E5CF29F4956CC72775835F4B75D0464B /* VariableExtractor.swift */,
+				178BB185DBD3191C06B2F139097AE4A2 /* Support Files */,
+			);
+			name = DDMathParser;
+			path = DDMathParser;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8F3A880F0B421B64D8202032D26EB86C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F10AB9E1BD4DDD9EB73F150E915542DD /* DDMathParser-umbrella.h in Headers */,
+				D0A4A44BF06B5240D2BCEEAE1222B310 /* MathParser.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D40DE7290818C7187C7DCC5B499F0C4D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71B968A3AD91DC247495E76C4B0C7A4C /* Pods-BarCalc-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBCC45A92C11B955945FAC2D64905849 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B5A9314F51A2CBA074426119E816DAD /* Pods-BarCalcTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA03EE509E1BBF62296D16DA5A175D87 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04E95C1EB4054062A651EEA4715F18B6 /* Pods-BarCalcUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		24B1E23A25077CD7AC1B4BB5443370B0 /* Pods-BarCalcUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA4F2CC6E0969FFAC1199CA00067E811 /* Build configuration list for PBXNativeTarget "Pods-BarCalcUITests" */;
+			buildPhases = (
+				205672142B6293E0A5965BB328649E54 /* Sources */,
+				3F541B6A9250AF22C5CBB5F3CA76927C /* Frameworks */,
+				EA03EE509E1BBF62296D16DA5A175D87 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-BarCalcUITests";
+			productName = "Pods-BarCalcUITests";
+			productReference = 441EFFC4D1BEB586ECB6CE76A338AEBA /* Pods_BarCalcUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		370F7111745C03FD13EB3350C9C23D15 /* Pods-BarCalc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57B70985BAA2B554E755926513C24C47 /* Build configuration list for PBXNativeTarget "Pods-BarCalc" */;
+			buildPhases = (
+				2BA4B66C8B0DA4E263F38C5FCA6B5D2E /* Sources */,
+				C5B4A11EADABAC9F9260982ACDDF0860 /* Frameworks */,
+				D40DE7290818C7187C7DCC5B499F0C4D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3E07F053025322739E6BEC7D0545282B /* PBXTargetDependency */,
+			);
+			name = "Pods-BarCalc";
+			productName = "Pods-BarCalc";
+			productReference = 8D25F3CBB4C9D34EC643E693E7CCBE36 /* Pods_BarCalc.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		91ED79E07DD4C0D762222BA5FC99C65B /* Pods-BarCalcTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A0C9312E08F408A12F0EF05E2FE3EAF /* Build configuration list for PBXNativeTarget "Pods-BarCalcTests" */;
+			buildPhases = (
+				25A1F44D4C3E757756E478ED066340B6 /* Sources */,
+				184E4B9FA9886B1DB09980757E090990 /* Frameworks */,
+				DBCC45A92C11B955945FAC2D64905849 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-BarCalcTests";
+			productName = "Pods-BarCalcTests";
+			productReference = 593BF28FC053F35B5DE9B5A22EC3EC08 /* Pods_BarCalcTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B027C7F17A48E878172D5B42600DA24F /* DDMathParser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2EE22D45446B6FB77AD90D04AE760D9A /* Build configuration list for PBXNativeTarget "DDMathParser" */;
+			buildPhases = (
+				7616D70A68DF89E1782252FC9AC9CA05 /* Sources */,
+				217998D43E6326234D66258DA64D5598 /* Frameworks */,
+				8F3A880F0B421B64D8202032D26EB86C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DDMathParser;
+			productName = DDMathParser;
+			productReference = 8B3C418B46E0F3DCD3141803B2E38CBC /* MathParser.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 1C7B4EC42A864EE76511F2D4AAC7FB16 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B027C7F17A48E878172D5B42600DA24F /* DDMathParser */,
+				370F7111745C03FD13EB3350C9C23D15 /* Pods-BarCalc */,
+				91ED79E07DD4C0D762222BA5FC99C65B /* Pods-BarCalcTests */,
+				24B1E23A25077CD7AC1B4BB5443370B0 /* Pods-BarCalcUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		205672142B6293E0A5965BB328649E54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1959AEDED2A45CB6636E9C10443B63E8 /* Pods-BarCalcUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25A1F44D4C3E757756E478ED066340B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09795DD920ED3BAF336CA70B94270B1B /* Pods-BarCalcTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BA4B66C8B0DA4E263F38C5FCA6B5D2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35F5082692B95CB3033DCEB8D57CB9F6 /* Pods-BarCalc-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7616D70A68DF89E1782252FC9AC9CA05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9A6A20F1AD8DDEAB1F8CE62BB417AE9 /* Character.swift in Sources */,
+				0E3FCA1F245386794218B70CC7F75A48 /* DDMathParser-dummy.m in Sources */,
+				2A712044B54383D1D13DF94FC58487CC /* Double.swift in Sources */,
+				2E09DC4A438A7130F3D2B4085A29E96F /* DynamicResolution.swift in Sources */,
+				3208A5A9D7113755E3EEC40298BC7281 /* Either.swift in Sources */,
+				2C77EE58F7940D39E24620FCC5EF579C /* Evaluator.swift in Sources */,
+				392C1F7D33503448142E25BB050EFA90 /* ExponentExtractor.swift in Sources */,
+				E568ACF66BBB25A74645C22ACF819CF4 /* Expression.swift in Sources */,
+				B85FB8A948B9CE562B07C79B44892E9B /* Expressionizer.swift in Sources */,
+				CDBDDA6672BE5BA85A923FB7872C361E /* ExpressionRewriter.swift in Sources */,
+				341154798C4280C8396114C74EB88740 /* Function.swift in Sources */,
+				F922B453604823C56143CBDD2F2ADFFD /* Functions+Defaults.swift in Sources */,
+				B4E73EFF26D048F07F697939AF7CB8B0 /* FunctionSet.swift in Sources */,
+				B4979C28CA99CAA9CA5E5F9B10C759D9 /* GroupedToken.swift in Sources */,
+				C6CA2602017F34761CF81B504ADBAD3F /* HexNumberExtractor.swift in Sources */,
+				3FF5CCB4A95D788C43F0CA02FAA4F435 /* IdentifierExtractor.swift in Sources */,
+				897D42542DF8C8A4FBDAD18299662179 /* LocalizedNumberExtractor.swift in Sources */,
+				AE2431D3822F829BB83F698DEFD555A7 /* MathParserErrors.swift in Sources */,
+				10D7CC510C4C35747EDD32E2499015B0 /* NumberExtractor.swift in Sources */,
+				F42D115B9CEE11A45302BDA0BE5CBB79 /* OctalNumberExtractor.swift in Sources */,
+				BE63D6999778A55473CD7B36F3C265A2 /* Operator+Defaults.swift in Sources */,
+				A77BD0C187DF94798A7F24F67E10DF12 /* Operator.swift in Sources */,
+				D9064852DEF10123A0E6F439DF5930F0 /* OperatorExtractor.swift in Sources */,
+				7BBE5ED3072C2125DF1DCF0DD4206DB9 /* OperatorSet.swift in Sources */,
+				27DE86C053B3660CF99EC4D9C88A5667 /* OperatorTokenSet.swift in Sources */,
+				ABA6823987AB7344381939ACEF020DD8 /* PeekingIterator.swift in Sources */,
+				7F3873CB789022A12DFF64791E55EE3B /* QuotedVariableExtractor.swift in Sources */,
+				2389A4EBB7E5F3D7148B28158D2E3F99 /* RawToken.swift in Sources */,
+				CEAA2CF3BEEE15E4E72C175AF864D5BF /* ResolvedToken.swift in Sources */,
+				F5E67236F68F1CB502FE9159B759775E /* RewriteRule+Defaults.swift in Sources */,
+				CE714F4BC4CDC0A668B7BCF17D0B924C /* RewriteRule.swift in Sources */,
+				790785A26B888307314140F0E89B0B03 /* SpecialNumberExtractor.swift in Sources */,
+				9D14C1DC1E2CB709ACC8D495D27599A1 /* String.swift in Sources */,
+				0AACB5AC453FCDC72B0C93B1F0ADF204 /* TokenCharacterBuffer.swift in Sources */,
+				39B69EB019C5E25E3F14FE2ACB8644FF /* TokenExtractor.swift in Sources */,
+				03B6BD78A28212F807053F8F885FAAF3 /* TokenGrouper.swift in Sources */,
+				E1BB29589F23B773B266C74EB284581D /* TokenIterator.swift in Sources */,
+				D85EFDB016B0BDF1EFCB2D0BAA58CDEC /* Tokenizer.swift in Sources */,
+				EB88F0E69C004445BDA0BD7EDC99426B /* TokenResolver.swift in Sources */,
+				4FCDEBC0AC43C3BAFFD0C962490D85A8 /* VariableExtractor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3E07F053025322739E6BEC7D0545282B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DDMathParser;
+			target = B027C7F17A48E878172D5B42600DA24F /* DDMathParser */;
+			targetProxy = EFD7BD0B12D5FC03AD281B577CDBB6C3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		080376E9AA79C190CBEC4012A4C9A4C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAB1B0D687F82908F0C9A1DC1DA19EE9 /* Pods-BarCalc.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-BarCalc/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MODULEMAP_FILE = "Target Support Files/Pods-BarCalc/Pods-BarCalc.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_BarCalc;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		20AA05F81C416A715CFCDB086C337974 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8AF5E53C12238A7FE57A16DBF9B2301 /* DDMathParser.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DDMathParser/DDMathParser-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DDMathParser/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/DDMathParser/DDMathParser.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = MathParser;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2F5349E708712A4E6BF95F65BD8ECC30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E523D4F49A99C698B3BA0A54212D6D1F /* Pods-BarCalcTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-BarCalcTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MODULEMAP_FILE = "Target Support Files/Pods-BarCalcTests/Pods-BarCalcTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_BarCalcTests;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		38917CAD9E93296FA5BDE85061EFCF86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E2DC3354FCCD2CDB99D374B99275072 /* Pods-BarCalcTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-BarCalcTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MODULEMAP_FILE = "Target Support Files/Pods-BarCalcTests/Pods-BarCalcTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_BarCalcTests;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5D622BA00757EC20ADAD24C580904C04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		720F457F5F2CF9225E070E252D91BB4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01FFEB2BAD01A1B5BF00BDB32FA61824 /* Pods-BarCalcUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-BarCalcUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MODULEMAP_FILE = "Target Support Files/Pods-BarCalcUITests/Pods-BarCalcUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_BarCalcUITests;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		96877E08A4A1F6EA9DBC6794E23A2D6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F7BC8A63D382DB4703FBF76CC90F7EF /* Pods-BarCalcUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-BarCalcUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MODULEMAP_FILE = "Target Support Files/Pods-BarCalcUITests/Pods-BarCalcUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_BarCalcUITests;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AB74B5E09B30AE94F1D9671501EA01E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		D90FBBFE38207F3785FD242D482A1E2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8AF5E53C12238A7FE57A16DBF9B2301 /* DDMathParser.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DDMathParser/DDMathParser-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DDMathParser/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/DDMathParser/DDMathParser.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = MathParser;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DF51DFB539236C292462141AAB34A8CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB263FE40916E1E2F3BFE02D2CA31458 /* Pods-BarCalc.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-BarCalc/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MODULEMAP_FILE = "Target Support Files/Pods-BarCalc/Pods-BarCalc.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_BarCalc;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB74B5E09B30AE94F1D9671501EA01E8 /* Debug */,
+				5D622BA00757EC20ADAD24C580904C04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2EE22D45446B6FB77AD90D04AE760D9A /* Build configuration list for PBXNativeTarget "DDMathParser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D90FBBFE38207F3785FD242D482A1E2D /* Debug */,
+				20AA05F81C416A715CFCDB086C337974 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57B70985BAA2B554E755926513C24C47 /* Build configuration list for PBXNativeTarget "Pods-BarCalc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF51DFB539236C292462141AAB34A8CD /* Debug */,
+				080376E9AA79C190CBEC4012A4C9A4C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A0C9312E08F408A12F0EF05E2FE3EAF /* Build configuration list for PBXNativeTarget "Pods-BarCalcTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38917CAD9E93296FA5BDE85061EFCF86 /* Debug */,
+				2F5349E708712A4E6BF95F65BD8ECC30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA4F2CC6E0969FFAC1199CA00067E811 /* Build configuration list for PBXNativeTarget "Pods-BarCalcUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96877E08A4A1F6EA9DBC6794E23A2D6D /* Debug */,
+				720F457F5F2CF9225E070E252D91BB4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

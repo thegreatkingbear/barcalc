@@ -1,0 +1,6 @@
+framework module Pods_BarCalcUITests {
+  umbrella header "Pods-BarCalcUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
