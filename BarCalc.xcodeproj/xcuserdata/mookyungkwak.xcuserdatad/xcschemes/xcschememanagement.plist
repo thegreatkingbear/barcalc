@@ -9,9 +9,19 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>LauncherApplication.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>E74D31E91E32C3A500EF4C3B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>E78DBD791DE0CF77006AA55D</key>
 		<dict>
 			<key>primary</key>

@@ -10,6 +10,12 @@
 		02C70BFB36E447B9E1FF8B62 /* Pods_BarCalcTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F23B952894FA65EBB7EDFE5C /* Pods_BarCalcTests.framework */; };
 		6D19F3E981DE5A87932B9AF9 /* Pods_BarCalc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE6A5CC15BBE4C6005360FB8 /* Pods_BarCalc.framework */; };
 		E72C2D611DE2A71C001E33CE /* MathParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E72C2D601DE2A71C001E33CE /* MathParser.framework */; };
+		E74D31ED1E32C3A500EF4C3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74D31EC1E32C3A500EF4C3B /* AppDelegate.swift */; };
+		E74D31F11E32C3A500EF4C3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E74D31F01E32C3A500EF4C3B /* Assets.xcassets */; };
+		E74D31F41E32C3A500EF4C3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E74D31F21E32C3A500EF4C3B /* Main.storyboard */; };
+		E74D31FC1E32C65D00EF4C3B /* LauncherApplication.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = E74D31EA1E32C3A500EF4C3B /* LauncherApplication.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E74D31FE1E32C6B100EF4C3B /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E74D31FD1E32C6B100EF4C3B /* ServiceManagement.framework */; };
+		E74D32001E33E5F900EF4C3B /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E74D31FD1E32C6B100EF4C3B /* ServiceManagement.framework */; };
 		E78DBD7E1DE0CF77006AA55D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78DBD7D1DE0CF77006AA55D /* AppDelegate.swift */; };
 		E78DBD801DE0CF77006AA55D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E78DBD7F1DE0CF77006AA55D /* Assets.xcassets */; };
 		E78DBD831DE0CF77006AA55D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E78DBD811DE0CF77006AA55D /* MainMenu.xib */; };
@@ -38,6 +44,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		E74D31FB1E32C62100EF4C3B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				E74D31FC1E32C65D00EF4C3B /* LauncherApplication.app in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0EF1DEF933961E52E9A3AEC3 /* Pods-BarCalcUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BarCalcUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BarCalcUITests/Pods-BarCalcUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8C945B1B0D8980FF35D4673A /* Pods-BarCalcTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BarCalcTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BarCalcTests/Pods-BarCalcTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -46,6 +65,14 @@
 		A49174F17D332057234C6BDC /* Pods-BarCalcTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BarCalcTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BarCalcTests/Pods-BarCalcTests.release.xcconfig"; sourceTree = "<group>"; };
 		CE807C3B5CDAA664B41019BB /* Pods_BarCalcUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BarCalcUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E72C2D601DE2A71C001E33CE /* MathParser.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MathParser.framework; path = "../../Library/Developer/Xcode/DerivedData/BarCalc-fzyxesjqmbrjvocsnkcgpuqzabfz/Build/Products/Debug/DDMathParser/MathParser.framework"; sourceTree = "<group>"; };
+		E74D31EA1E32C3A500EF4C3B /* LauncherApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LauncherApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E74D31EC1E32C3A500EF4C3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E74D31F01E32C3A500EF4C3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E74D31F31E32C3A500EF4C3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E74D31F51E32C3A500EF4C3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E74D31F91E32C45E00EF4C3B /* LauncherApplication.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LauncherApplication.entitlements; sourceTree = "<group>"; };
+		E74D31FA1E32C49300EF4C3B /* BarCalc.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BarCalc.entitlements; sourceTree = "<group>"; };
+		E74D31FD1E32C6B100EF4C3B /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
 		E78DBD7A1DE0CF77006AA55D /* BarCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E78DBD7D1DE0CF77006AA55D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E78DBD7F1DE0CF77006AA55D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -66,10 +93,19 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		E74D31E71E32C3A500EF4C3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E74D32001E33E5F900EF4C3B /* ServiceManagement.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E78DBD771DE0CF77006AA55D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E74D31FE1E32C6B100EF4C3B /* ServiceManagement.framework in Frameworks */,
 				E72C2D611DE2A71C001E33CE /* MathParser.framework in Frameworks */,
 				6D19F3E981DE5A87932B9AF9 /* Pods_BarCalc.framework in Frameworks */,
 			);
@@ -97,12 +133,25 @@
 		CCB44F0F187FF900C76DB24E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E74D31FD1E32C6B100EF4C3B /* ServiceManagement.framework */,
 				E72C2D601DE2A71C001E33CE /* MathParser.framework */,
 				EE6A5CC15BBE4C6005360FB8 /* Pods_BarCalc.framework */,
 				F23B952894FA65EBB7EDFE5C /* Pods_BarCalcTests.framework */,
 				CE807C3B5CDAA664B41019BB /* Pods_BarCalcUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E74D31EB1E32C3A500EF4C3B /* LauncherApplication */ = {
+			isa = PBXGroup;
+			children = (
+				E74D31F91E32C45E00EF4C3B /* LauncherApplication.entitlements */,
+				E74D31EC1E32C3A500EF4C3B /* AppDelegate.swift */,
+				E74D31F01E32C3A500EF4C3B /* Assets.xcassets */,
+				E74D31F21E32C3A500EF4C3B /* Main.storyboard */,
+				E74D31F51E32C3A500EF4C3B /* Info.plist */,
+			);
+			path = LauncherApplication;
 			sourceTree = "<group>";
 		};
 		E78DBD711DE0CF77006AA55D = {
@@ -112,6 +161,7 @@
 				E78DBD7C1DE0CF77006AA55D /* BarCalc */,
 				E78DBD8C1DE0CF77006AA55D /* BarCalcTests */,
 				E78DBD971DE0CF77006AA55D /* BarCalcUITests */,
+				E74D31EB1E32C3A500EF4C3B /* LauncherApplication */,
 				E78DBD7B1DE0CF77006AA55D /* Products */,
 				E89F672B8F1D1D3ECA1A2CCB /* Pods */,
 				CCB44F0F187FF900C76DB24E /* Frameworks */,
@@ -124,6 +174,7 @@
 				E78DBD7A1DE0CF77006AA55D /* BarCalc.app */,
 				E78DBD891DE0CF77006AA55D /* BarCalcTests.xctest */,
 				E78DBD941DE0CF77006AA55D /* BarCalcUITests.xctest */,
+				E74D31EA1E32C3A500EF4C3B /* LauncherApplication.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -131,6 +182,7 @@
 		E78DBD7C1DE0CF77006AA55D /* BarCalc */ = {
 			isa = PBXGroup;
 			children = (
+				E74D31FA1E32C49300EF4C3B /* BarCalc.entitlements */,
 				E78DBD7D1DE0CF77006AA55D /* AppDelegate.swift */,
 				E78DBD7F1DE0CF77006AA55D /* Assets.xcassets */,
 				E78DBD811DE0CF77006AA55D /* MainMenu.xib */,
@@ -175,6 +227,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		E74D31E91E32C3A500EF4C3B /* LauncherApplication */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E74D31F61E32C3A500EF4C3B /* Build configuration list for PBXNativeTarget "LauncherApplication" */;
+			buildPhases = (
+				E74D31E61E32C3A500EF4C3B /* Sources */,
+				E74D31E71E32C3A500EF4C3B /* Frameworks */,
+				E74D31E81E32C3A500EF4C3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LauncherApplication;
+			productName = LauncherApplication;
+			productReference = E74D31EA1E32C3A500EF4C3B /* LauncherApplication.app */;
+			productType = "com.apple.product-type.application";
+		};
 		E78DBD791DE0CF77006AA55D /* BarCalc */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E78DBD9D1DE0CF77006AA55D /* Build configuration list for PBXNativeTarget "BarCalc" */;
@@ -185,6 +254,7 @@
 				E78DBD781DE0CF77006AA55D /* Resources */,
 				2E33231F674BF4E7F6E40838 /* [CP] Embed Pods Frameworks */,
 				773E46DF058B39321A874E7A /* [CP] Copy Pods Resources */,
+				E74D31FB1E32C62100EF4C3B /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -243,13 +313,30 @@
 		E78DBD721DE0CF77006AA55D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
+				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Mookyung Kwak";
 				TargetAttributes = {
+					E74D31E91E32C3A500EF4C3B = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 9E3BES8CW5;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
 					E78DBD791DE0CF77006AA55D = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 9E3BES8CW5;
 						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 					E78DBD881DE0CF77006AA55D = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -279,11 +366,21 @@
 				E78DBD791DE0CF77006AA55D /* BarCalc */,
 				E78DBD881DE0CF77006AA55D /* BarCalcTests */,
 				E78DBD931DE0CF77006AA55D /* BarCalcUITests */,
+				E74D31E91E32C3A500EF4C3B /* LauncherApplication */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		E74D31E81E32C3A500EF4C3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E74D31F11E32C3A500EF4C3B /* Assets.xcassets in Resources */,
+				E74D31F41E32C3A500EF4C3B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E78DBD781DE0CF77006AA55D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -449,6 +546,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		E74D31E61E32C3A500EF4C3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E74D31ED1E32C3A500EF4C3B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E78DBD761DE0CF77006AA55D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -491,6 +596,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		E74D31F21E32C3A500EF4C3B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E74D31F31E32C3A500EF4C3B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		E78DBD811DE0CF77006AA55D /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -502,6 +615,43 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		E74D31F71E32C3A500EF4C3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_ENTITLEMENTS = LauncherApplication/LauncherApplication.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9E3BES8CW5;
+				INFOPLIST_FILE = LauncherApplication/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.passionproof.LauncherApplication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E74D31F81E32C3A500EF4C3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_ENTITLEMENTS = LauncherApplication/LauncherApplication.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9E3BES8CW5;
+				INFOPLIST_FILE = LauncherApplication/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.passionproof.LauncherApplication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		E78DBD9B1DE0CF77006AA55D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -595,11 +745,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = BarCalc/BarCalc.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9E3BES8CW5;
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = BarCalc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.passionproof.BarCalc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -613,11 +766,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = BarCalc/BarCalc.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9E3BES8CW5;
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = BarCalc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.passionproof.BarCalc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -689,6 +845,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E74D31F61E32C3A500EF4C3B /* Build configuration list for PBXNativeTarget "LauncherApplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E74D31F71E32C3A500EF4C3B /* Debug */,
+				E74D31F81E32C3A500EF4C3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		E78DBD751DE0CF77006AA55D /* Build configuration list for PBXProject "BarCalc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

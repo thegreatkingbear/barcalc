@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import ServiceManagement
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
@@ -18,13 +19,27 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     let popover = NSPopover()
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Insert code here to initialize your application
+        // 바에 버튼을 올려준다
         if let button = statusItem.button {
             button.image = NSImage(named: "StatusBarButtonImage")
             button.action = #selector(AppDelegate.toggleTextInput(_:))
         }
         
+        // 버튼을 누르면 text input view controller를 띄워준다
         popover.contentViewController = TextInputViewController(nibName: "TextInputViewController", bundle: nil)
+        
+        // start up at login을 구현한다
+        let launcherAppIdentifier = "com.passionproof.LauncherApplication"
+        SMLoginItemSetEnabled(launcherAppIdentifier as CFString, true)
+        var startedAtLogin = false
+        for app in NSWorkspace.shared().runningApplications {
+            if app.bundleIdentifier == launcherAppIdentifier {
+                startedAtLogin = true
+            }
+        }
+        if startedAtLogin {
+            DistributedNotificationCenter.default().post(name: NSNotification.Name(rawValue: "killme"), object: Bundle.main.bundleIdentifier!)
+        }
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
